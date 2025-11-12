@@ -1,0 +1,43 @@
+/* ===== Estilos para TABLET ===== */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Contenedor de tarjetas */
+  .teacher-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente fila */
+    justify-content: space-between; /* Espacio entre tarjetas */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* Tarjeta */
+  .teacher-card {
+    display: flex; /* Foto + info alineadas en fila */
+    flex-direction: row;
+    align-items: center;
+    flex: 0 1 calc(50% - 10px); /* Cada tarjeta ocupa la mitad menos el gap */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Foto del profesor */
+  .teacher-card__photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  /* Información del profesor */
+  .teacher-card__info {
+    flex: 1;
+    margin-left: 15px;
+  }
+
+  /* Actividad y chat */
+  .teacher-card__activity,
+  .teacher-card__chat {
+    font-size: 0.9rem;
+    margin-left: 15px;
+  }
+}

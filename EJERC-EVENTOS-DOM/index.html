@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicios DOM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Script de tipo module para poder usar import/export -->
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <h1 id="titulo-principal">Título Principal</h1>
+
+    <!-- Ejercicio 1: Botón -->
+    <section>
+      <h2>Ejercicio 1: Botón</h2>
+      <button id="btn-boton">Enviar</button>
+      <p id="mensaje-boton"></p>
+    </section>
+
+    <hr />
+
+    <!-- Ejercicio 2: Validación de nombre -->
+    <section>
+      <h2>Ejercicio 2: Validación de nombre</h2>
+      <input type="text" id="entrada-nombre" placeholder="Escribe tu nombre" />
+      <p id="mensaje-nombre"></p>
+    </section>
+
+    <hr />
+
+    <!-- Ejercicio 3: Actualización de título -->
+    <section>
+      <h2>Ejercicio 3: Actualización de título</h2>
+      <input
+        type="text"
+        id="entrada-titulo"
+        placeholder="Escribe el nuevo título"
+      />
+    </section>
+
+    <hr />
+
+    <!-- Ejercicio 4: Selector de color -->
+    <section>
+      <h2>Ejercicio 4: Selector de color</h2>
+      <select id="selector-color">
+        <option value="">--Selecciona un color--</option>
+        <option value="rojo">Rojo</option>
+        <option value="verde">Verde</option>
+        <option value="azul">Azul</option>
+      </select>
+    </section>
+    <hr />
+    <!-- Ejercicio 5: Alternador de clase -->
+    <section>
+      <h2>Ejercicio 5: Alternador de clase</h2>
+      <button id="btn-alternar">Alternar Clase</button>
+      <div id="caja"></div>
+    </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 6: Descuento Dinámico</h2>
+      <select id="selector-producto">
+        <option value="">--Selecciona un producto--</option>
+        <option value="A">Producto A</option>
+        <option value="B">Producto B</option>
+        <option value="C">Producto C</option>
+      </select>
+      <p id="mensaje-precio"></p>
+    </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 7: Acumulador de Eventos</h2>
+      <button id="btn-contador">Contar clics</button>
+      <p id="mostrar-cont">0</p>
+    </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 8: Comprobación con for...of</h2>
+      <label><input type="checkbox" id="cbox1" /> Opción 1</label>
+      <label><input type="checkbox" id="cbox2" /> Opción 2</label>
+      <label><input type="checkbox" id="cbox3" /> Opción 3</label>
+      <p id="mensaje-checks"></p>
+    </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 9: Bloqueo por Condición</h2>
+      <input type="text" id="entrada-clave" placeholder="Introduce la clave" />
+      <button id="btn-bloqueado" disabled>Enviar</button>
+    </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 10: Menú de Roles</h2>
+      <select id="selector-rol">
+        <option value="">--Selecciona un rol--</option>
+        <option value="Usuario">Usuario</option>
+        <option value="Moderador">Moderador</option>
+        <option value="Administrador">Administrador</option>
+      </select>
+      <p id="mensaje-rol"></p>
+    </section>
+  </body>
+</html>

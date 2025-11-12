@@ -1,0 +1,36 @@
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .teacher-card {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 14px;
+  }
+
+  .teacher-card__photo img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+  }
+
+  .teacher-card__info span:first-child {
+    font-size: 15px;
+  }
+
+  .teacher-card__info span:last-child {
+    font-size: 13px;
+  }
+
+  .teacher-card__activity span,
+  .teacher-card__chat span {
+    font-size: 13px;
+  }
+
+  .teacher-card__button {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}

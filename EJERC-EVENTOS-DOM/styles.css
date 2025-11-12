@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+  padding: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.enviado {
+  background-color: #4caf50; /* verde */
+  color: white;
+  border: 2px solid #388e3c;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enviado:hover {
+  transform: scale(1.05);
+}
+
+.rojo {
+  background-color: red;
+  color: white;
+}
+
+.verde {
+  background-color: green;
+  color: white;
+}
+
+.azul {
+  background-color: blue;
+  color: white;
+}
+#caja {
+  width: 150px;
+  height: 150px;
+  background-color: lightgray;
+  transition: all 0.3s ease;
+}
+
+#caja.activo {
+  background-color: orange;
+  transform: scale(1.2);
+}
+.acceso-total {
+  color: red;
+  font-weight: bold;
+}
