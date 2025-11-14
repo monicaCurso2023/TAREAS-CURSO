@@ -116,6 +116,7 @@ function alertaNivel(nivel) {
 
     } 
 }  
+ alertaNivel(2);
 //8. Cálculo desconto
 const importes = [100, 250, 50, 300];
 
