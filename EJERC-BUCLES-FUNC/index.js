@@ -1,50 +1,86 @@
 // 1. Lista de Prezos
-function listaPrezos(prezos) {
-    for (let froita in prezos) {
-        console.log("A " + froita + " custa", prezos[froita] + "€");
+const prezos = { 
+    mazá: 1.5, 
+    banana: 0.8, 
+    uva: 3.2 
+};
+
+function listaPrezos(prezosObj) {
+    for (let froita in prezosObj) {
+        console.log("A " + froita + " custa", prezosObj[froita] + "€");
     }
 }
-listaPrezos({ mazá: 1.5, banana: 0.8, uva: 3.2 });
+
+listaPrezos(prezos);
 
 // 2. Suma de Array
-function sumaArray(notas) {
+const notas1 = [7, 5, 8, 9, 6]; 
+function sumaArray(notasArray) {
     let sumaTotal = 0;
-    for (const nota of notas) {
+
+    for (const nota of notasArray) {
         sumaTotal += nota;
     }
+
     console.log("A suma total das notas é:", sumaTotal);
 }
-sumaArray([7, 5, 8, 9, 6]);
+
+sumaArray(notas1);
+
 
 // 3. Días de la semana
-function mostrarDias(dias) {
-    for (const dia of dias) {
+const dias = ["Luns", "Martes", "Mércores", "Xoves", "Venres", "Sábado", "Domingo"];
+
+function mostrarDias(diasArray) {
+    for (const dia of diasArray) {
         console.log(dia);
     }
 }
-mostrarDias(["Luns", "Martes", "Mércores", "Xoves", "Venres", "Sábado", "Domingo"]);
+
+mostrarDias(dias);
+
 
 // 4. Búsqueda de Rol
-function buscarRol(roles, usuarioActual) {
-    for (const rol in roles) {
-        if (roles[rol] == usuarioActual) {
+const roles = { 
+    admin: "Pepe", 
+    editor: "Xoana", 
+    convidado: "Xurxo" 
+};
+
+const usuarioActual = "Xoana";
+
+function buscarRol(rolesObj, usuario) {
+    for (const rol in rolesObj) {
+        if (rolesObj[rol] === usuario) {
             console.log("O usuario actual é", rol);
+            return; // salir después de encontrar el rol
         }
     }
+    console.log("Usuario non atopado.");
 }
-buscarRol({ admin: "Pepe", editor: "Xoana", convidado: "Xurxo" }, "Xoana");
+
+buscarRol(roles, usuarioActual);
+
+
 
 // 5. Clasificar Notas
+
+const notas = [7, 5, 3, 9, 2];
+
 function contarAprobadas(notas) {
     let aprobadas = 0;
+
     for (const nota of notas) {
         if (nota >= 5) {
             aprobadas++;
         }
     }
+
     console.log("Número de notas aprobadas son:", aprobadas);
 }
-contarAprobadas([7, 5, 3, 9, 2]);
+
+contarAprobadas(notas);
+
 
 // 6. Menú de comidas
 function menuComida(opcion) {
