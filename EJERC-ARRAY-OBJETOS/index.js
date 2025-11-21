@@ -47,11 +47,11 @@ console.log(dueñoConMasPuertas(datosCasas));
 
 for (const casa of datosCasas){
   if (casa.numPortas > 20){
-     console.log("Casa grande: ", casa.donoCasa);
+     console.log("Casa grande o dono da casa é: ", casa.donoCasa);
      
 
   }else {
-    console.log("Casa pequena: ", casa.donoCasa);
+    console.log("Casa pequena o dono da casa é: ", casa.donoCasa);
   }   
      
 }
