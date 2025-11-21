@@ -89,7 +89,7 @@ for (const casa of datosCasas) {
     }
 }
 
-console.log("Número de casas con exactamente 5 portas:", contador);
+console.log("Número de casas con exactamente 5 puertas:", contador);
 /*OTRA ALTERNATIVA TODAVIA MAS CORTA SERIA 
 let contador = 0;
 for (const casa of datosCasas) {
