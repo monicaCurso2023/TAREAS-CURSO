@@ -84,12 +84,20 @@ console.log(existeDono("Maria"));    // false
 let contador = 0;
 
 for (const casa of datosCasas) {
-    if (casa.numPortas === 5) {
-        contador++;
+    if (casa.numPortas == 5) {
+        contador++; //
     }
 }
 
 console.log("Número de casas con exactamente 5 portas:", contador);
+/*OTRA ALTERNATIVA TODAVIA MAS CORTA SERIA 
+let contador = 0;
+for (const casa of datosCasas) {
+    if (casa.numPortas == 5) {
+      
+    }}
+console.log("Número de casas con exactamente 5 portas:", ++contador);*/
+
 
 // 10. Reasignación condicional
 
