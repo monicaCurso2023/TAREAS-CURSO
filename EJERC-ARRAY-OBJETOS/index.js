@@ -47,16 +47,57 @@ console.log(dueñoConMasPuertas(datosCasas));
 
 for (const casa of datosCasas){
   if (casa.numPortas > 20){
-     console.log("Casa grande:", casa.donoCasa);
+     console.log("Casa grande: ", casa.donoCasa);
      
 
   }else {
-    console.log("Casa pequena:", casa.donoCasa);
+    console.log("Casa pequena: ", casa.donoCasa);
   }   
      
 }
 // 7. Añadir propiedad
 
+for (const casa of datosCasas) {
+    casa.antiguidade = 10; 
+}
+
+console.log("Casas con nova propiedade antiguidade:");
+console.log(datosCasas);
 
      
-    
+ // 8. Comprobacion de existencia
+ 
+ function existeDono(nome) {
+  for (const casa of datosCasas) {
+    if (casa.donoCasa === nome) {
+      return true;   // atopouse o dono
+    }
+  }
+  return false;      // non apareceu ningún
+}
+console.log(existeDono("Pepe"));     // true
+console.log(existeDono("Anxo"));     // true
+console.log(existeDono("Maria"));    // false
+
+// 9. Contador de casas pequeñas
+
+let contador = 0;
+
+for (const casa of datosCasas) {
+    if (casa.numPortas === 5) {
+        contador++;
+    }
+}
+
+console.log("Número de casas con exactamente 5 portas:", contador);
+
+// 10. Reasignación condicional
+
+for (const casa of datosCasas) {
+    if (casa.donoCasa === "Pepeto") {
+        casa.numPortas = 100;
+    }
+}
+
+console.log("Lista actualizada de casas:");
+console.log(datosCasas);
