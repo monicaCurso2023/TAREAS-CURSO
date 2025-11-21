@@ -101,11 +101,22 @@ console.log("Número de casas con exactamente 5 portas:", ++contador);*/
 
 // 10. Reasignación condicional
 
-for (const casa of datosCasas) {
+/*for (const casa of datosCasas) {
     if (casa.donoCasa === "Pepeto") {
         casa.numPortas = 100;
     }
 }
 
 console.log("Lista actualizada de casas:");
+console.log(datosCasas);*/
+// con funcion 
+function Reasignación(datos) {
+  for (const casa of datos){
+    if (casa.donoCasa === "Pepeto") {
+        casa.numPortas = 100;
+    }
+  }
+  
+}
+Reasignación(datosCasas)
 console.log(datosCasas);
